@@ -1,0 +1,15 @@
+{
+  "name": "bookk-print",
+  "version": "1.0.0",
+  "description": "",
+  "main": "print-test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon print-test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "printer": "^0.2.2"
+  }
+}

@@ -1,0 +1,7 @@
+t formats: ['BPM', 'EMF', 'PNG', 'PPM']. Note that EMF and BMP formats are supported only on windows.
+render(options, [callback(err, pages)]) - render/convert a PDF data into one of output format from getSupportedOutputFormats(). Parameters:
+option (object, mandatory) may contains the following fields:
+data (Buffer, mandatory) - PDF data buffer
+outputFormat (String, mandatory) - output format name. one from getSupportedOutputFormats()
+scaleFactor (Number, optional, default: 1.0) - scale factor of the output format.
+callback(err, pages) (function, optional) - callback function. pages is array of buffers. If callback is missing, then the pages will be returned from render(options). In case of error, an exception will be 
